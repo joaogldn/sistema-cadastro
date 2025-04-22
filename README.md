@@ -1,30 +1,51 @@
+<div allign: "left">
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdc3f" alt="Python">
+<img src="https://img.shields.io/badge/Flask-000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+</div>
+
 # Sistema de Cadastro
 
-Resolução de um desafio de Sistema de Cadastro com etapas de autenticação e validação de campos.
+Este repositório faz parte da resolução de um desafio de Sistema de Cadastro com etapas de autenticação e validação de campos para maior segurança.
 
-> Para inicializar:
+### ⚙️ Requisitos
 
-## Rodando a aplicação com Docker
+- Python 3 instalado
+- Flask
+- Docker instalado
 
-Siga os passos abaixo para rodar a aplicação Flask em um container Docker:
 
-### 1. **Clone o repositório (ou baixe os arquivos manualmente):**
+### 🐳 Executando a aplicação com Docker
 
-  Paraclonar o repositório faça isso com o seguinte comando:
-  
-  git clone https://https://github.com/joaogldn/sistema-cadastro.git
+Siga os passos abaixo para executar a aplicação Flask em um container Docker:
 
-  ### 2. **Construa a imagem Docker**
+### 📥 1. Clone o repositório
 
-  No diretório onde estão os arquivos do projeto, execute o comando abaixo para construir a imagem Docker:
+```bash
+git clone https://github.com/joaogldn/sistema-cadastro.git
+```
 
-  docker build -t cadastro-app-flask .
+### 🛠 2. Construa a imagem Docker
 
-  ### 3. **Execute o container**
+No diretório, onde estão os arquivos do projeto, execute o comando abaixo para construir a imagem Docker:
 
-  docker run -p 5000:5000 cadastro-app-flask
+```bash
+docker build -t cadastro-app-flask .
+```
 
-  ### 4. **Acesse a aplicação**
+### ▶️ 3. Execute o container
 
-  http://localhost:5000
+```bash
+docker run -p 5000:5000 cadastro-app-flask
+```
+
+### 🌐 4. Acesse a aplicação
+
+```bash
+http://localhost:5000
+```
+
+
 
