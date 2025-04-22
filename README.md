@@ -4,7 +4,6 @@ Resolução de um desafio de Sistema de Cadastro com etapas de autenticação e 
 
 > Para inicializar:
 
-
 ## Rodando a aplicação com Docker
 
 Siga os passos abaixo para rodar a aplicação Flask em um container Docker:
@@ -19,9 +18,11 @@ Siga os passos abaixo para rodar a aplicação Flask em um container Docker:
 
   No diretório onde estão os arquivos do projeto, execute o comando abaixo para construir a imagem Docker:
 
-  docker build -t minha-app-flask .
+  docker build -t cadastro-app-flask .
 
   ### 3. **Execute o container**
+
+  docker run -p 5000:5000 cadastro-app-flask
 
   ### 4. **Acesse a aplicação**
 
