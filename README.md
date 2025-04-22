@@ -4,18 +4,15 @@ Resolução de um desafio de Sistema de Cadastro com etapas de autenticação e 
 
 > Para inicializar:
 
-````
+
 ## Rodando a aplicação com Docker
 
 Siga os passos abaixo para rodar a aplicação Flask em um container Docker:
 
 ### 1. **Clone o repositório (ou baixe os arquivos manualmente):**
 
-- **Opção 1: Clonar o repositório**
-
-  Se você ainda não clonou o repositório, faça isso com o seguinte comando:
-
-  ```bash
+  Paraclonar o repositório faça isso com o seguinte comando:
+  
   git clone https://https://github.com/joaogldn/sistema-cadastro.git
 
   ### 2. **Construa a imagem Docker**
@@ -30,4 +27,3 @@ Siga os passos abaixo para rodar a aplicação Flask em um container Docker:
 
   http://localhost:5000
 
-````
