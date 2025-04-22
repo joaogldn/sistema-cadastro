@@ -1,11 +1,10 @@
-from flask import Flask, request, render_template_string
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def form():
-    with open("form.html") as f:
-        return f.read()
+    return render_template('form.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
@@ -20,7 +19,7 @@ def submit():
         return "Erro: E-mail inválido."
 
     if not validar_senha(senha):
-        return "Erro: A senha deve ter pelo menos 8 caracteres, incluindo uma letra maiúscula e um número."
+        return "Erro: A senha deve ter pelo menos 8 caracteres, incluindo uma letra maiuscula e um numero."
 
     return f"Cadastro realizado com sucesso, {nome}!"
 
@@ -33,4 +32,4 @@ def validar_senha(senha):
     return re.match(r'^(?=.*[A-Z])(?=.*\d).{8,}$', senha)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
